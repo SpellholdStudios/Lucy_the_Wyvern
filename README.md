@@ -11,8 +11,7 @@
 
 
 **Author:** berelinde  
-**Mod Website:** <a href="http://www.spellholdstudios.net/ie/adrian">Spellhold Studios</a>  
-**Mod Forum:** <a href="http://www.shsforums.net/topic/33667-lucy-the-wyvern/">Lucy the Wyvern</a>  
+**Mod Website and Forum:** <a href="http://www.shsforums.net/topic/33667-lucy-the-wyvern/">Lucy the Wyvern</a>  
 
 
 [Read the mod's readme](http://spellholdstudios.github.io/readmes/lucy-readme-english.html)
