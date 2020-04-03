@@ -27,15 +27,11 @@
 
 <hr>
 
-Forum: www.shsforums.net/topic/33667-lucy-the-wyvern/
-Readme: www.tolkienacrossthewater.com/readme-lucy.txt
 
 ## <a name="intro" id="intro"></a>Overview
 
-Provides a resolution to the saga of the enigmatic winged creature in Ribald's store.
-The mod adds an alternate outcome to meeting Lucy, the wyvern in the Adventure Mart.
+This mod adds an alternate outcome to meeting Lucy, the wyvern in the Adventure Mart, and provides a resolution to the saga of the enigmatic winged creature in Ribald's store.
 
-This mod adds a twist to the encounter with Lucy, the wyvern in the Adventure Mart.
 To access this encounter, simply talk to Lucy with your Bhaalspawn PC.
 
 
@@ -120,10 +116,6 @@ In addition to the methods above for removing individual components, you can com
 
 ## 
 
-VI.    Contact Information
-
-Berelinde created this mod. She can be contacted at berelinde@gmail.com.
-
 #### Special Acknowledgements to:
 
 - <a href="http://www.spellholdstudios.net/">Spellhold Studios</a> team for hosting the mod (<a href="http://www.shsforums.net">Forums</a>)
@@ -168,13 +160,12 @@ Berelinde created this mod. She can be contacted at berelinde@gmail.com.
 <div align="right"><a href="#top">Back to top</a></div>
 
 
-
 <hr>
 
 
 ## <a name="versions" id="versions"></a>Version History
 
-#### Version 5 ( April 2020)
+#### Version 5 (3rd April 2020)
 
 - Added *lucy.ini* metadata file to support AL|EN's "Project Infinity".
 - Renamed *setup-lucy.tp2* -> *lucy.tp2* to support AL|EN's "Project Infinity".
@@ -182,9 +173,10 @@ Berelinde created this mod. She can be contacted at berelinde@gmail.com.
 - Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
 - Added component `DESIGNATED` number and "*lucy_the_wyvern*" `LABEL`.
 - Added missing `HANDLE_CHARSETS` function to convert string entries for EE games.
+- Added native BG2:EE and EET compatibilities.
 - Added Polish translation by Cahir (<a href="http://athkatla.cob-bg.pl/viewtopic.php?t=6046">BWP FixPack</a>).
 - Added German, Italian, Polish and Spanish WeiDU prompts.
-- Re-formated, updated and renamed readme file to *isra_bg2-readme-english.html* and moved it into new readme folder.
+- Wrote a new *lucy-readme-english.html* readme file and moved it into new *readme* folder.
 - Removed useless "*backup*" folder.
 - Reorganized mod architecture tree: created "*lang*" and "*files*" folders to sort files according to their types.
 - Lower cased files.
@@ -192,18 +184,11 @@ Berelinde created this mod. She can be contacted at berelinde@gmail.com.
 - Updated WeiDU installer to v246.
 - Uploaded mod to official Spellhold Studios GitHub mirror account.
 
-----------------------------------------------------------------------------------------
-:: lucy -  Lucy the Wyvern v4
-
-:: HANDLE_CHARSETS for EE compatibility
-:: - LINK NOT FOUND -
-----------------------------------------------------------------------------------------
-
 ## 
 
 #### Version 4a (26 February 2011)
 
-- Unknown change-log.
+- Renamed WeiDU installer (Windows package).
 
 ## 
 
