@@ -4,7 +4,7 @@ SUPPORT ~bereline and Spellhold Studios at http://www.shsforums.net/forum/234-mi
 
 //MODDER
 
-VERSION ~v4~
+VERSION ~v5.0~
 
 README ~lucy/readme/lucy-readme-english.html~
 
@@ -20,17 +20,17 @@ ALWAYS
 	 *    No exception, everything needs to be converted                                             *
 	 *    setup.tra contains in game texts as well as installation texts and need to be converted    *
 	 * -----------------------------------------------------------------------*--------------------- */
-	ACTION_DEFINE_ARRAY b!noconvert BEGIN END
+	ACTION_DEFINE_ARRAY b#noconvert BEGIN END
 	// any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
-	ACTION_DEFINE_ARRAY b!reload BEGIN setup END
+	ACTION_DEFINE_ARRAY b#reload BEGIN setup END
 
 	LAF HANDLE_CHARSETS
 		INT_VAR
 			infer_charsets = 1
 		STR_VAR
 			tra_path = EVAL ~%MOD_FOLDER%/lang~
-			noconvert_array = b!noconvert
-			reload_array = b!reload
+			noconvert_array = b#noconvert
+			reload_array = b#reload
 	END
 
 END

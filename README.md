@@ -164,7 +164,7 @@ In addition to the methods above for removing individual components, you can com
 
 ## <a name="versions" id="versions"></a>Version History
 
-#### Version 5 (3rd April 2020)
+#### Version 5.0 (3rd April 2020)
 
 - Added *lucy.ini* metadata file to support AL|EN's "Project Infinity".
 - Renamed *setup-lucy.tp2* -> *lucy.tp2* to support AL|EN's "Project Infinity".
