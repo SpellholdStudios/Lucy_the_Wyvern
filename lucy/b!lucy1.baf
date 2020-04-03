@@ -1,0 +1,15 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    FadeToColor([20.0],0)
+    ActionOverride("lucy2",DestroySelf())
+    Wait(1)
+    CreateCreature("b!lucy",[486.265],0)
+    Wait(1)
+    MoveViewObject(Myself,INSTANT)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    ActionOverride("b!lucy2",StartDialogueNoSet(Player1))
+END
