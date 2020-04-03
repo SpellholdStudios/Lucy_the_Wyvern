@@ -7,32 +7,40 @@ VERSION ~v4~
 
 README ~lucy/readme-lucy.txt~
 
-AUTO_TRA ~lucy\%s~
+AUTO_TRA ~lucy/lang/%s~
 
 LANGUAGE ~English~
          ~english~
-         ~lucy\english\setup.tra~
+         ~lucy/lang/english/setup.tra~
 
-LANGUAGE ~Deutsch (von Jarl)~
+LANGUAGE ~Deutsch (Uebersetzung von Jarl)~
          ~german~
-         ~lucy\german\setup.tra~
+         ~lucy/lang/german/setup.tra~
 
-LANGUAGE ~Russian (by aerie.ru)~
+LANGUAGE ~Russian (translation by aerie.ru)~
          ~russian~
-         ~lucy\russian\setup.tra~ 
+         ~lucy/lang/russian/setup.tra~ 
          
-LANGUAGE ~Espanol (by Lisandro)~ 
+LANGUAGE ~Espanol (traduccion por Lisandro)~ 
          ~spanish~ 
-         ~lucy\spanish\setup.tra~ 
+         ~lucy/lang/spanish/setup.tra~ 
 
-LANGUAGE ~Italiano (by Ilot)~
+LANGUAGE ~Italiano (traduzione di ilot)~
          ~italian~
-         ~lucy\italian\setup.tra~
+         ~lucy/lang/italian/setup.tra~
 
-LANGUAGE ~Francais (by Le Marquis of the d'oghmatiques)~
+LANGUAGE ~Francais (Traduction : Le Marquis, des d'Oghmatiques)~
          ~french~
-         ~lucy\french\setup.tra~
+         ~lucy/lang/french/setup.tra~
 
+LANGUAGE ~Polski (translation by Cahir)~
+         ~polish~
+         ~lucy/lang/polish/setup.tra~
+
+
+/* ============================= *
+ *  Lucy the Wyvern Mod for BG2  *
+ * ============================= */
 BEGIN @0
 
 APPEND ~STATE.IDS~
@@ -52,5 +60,5 @@ COPY_EXISTING ~dharlot2.cre~ ~override/b!lucy.cre~
   WRITE_ASCII 0x280 ~b!lucy2~ #32 // assign DV
   
 //Compile dialogues and scripts
-COMPILE ~lucy/b!lucy.d~
-COMPILE ~lucy/b!lucy1.baf~
+COMPILE ~lucy/files/b!lucy.d~
+COMPILE ~lucy/files/b!lucy1.baf~

@@ -67,8 +67,6 @@ This is a WeiDU mod, and therefore should be compatible with all WeiDU mods. How
 
 ## 
 
-## 
-
 #### Enhanced Editions Note
 
 The Enhanced Editions are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update (if possible) as even after reinstalling the mods, you might not be able to continue with your old savegames. Alternatively, copy the whole game's folder into a new one that can be modded and will stay untouched by game patches. It is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
@@ -133,8 +131,8 @@ Berelinde created this mod. She can be contacted at berelinde@gmail.com.
 - Leomar, for being incredibly kind, traifying this, and updating the translations.
 
 - Polish translation: Cahir.
-- Italian translation: Ilot.
 - French translation: Le Marquis of the d'Ogmatiques.
+- Italian translation: Ilot.
 - Spanish translation: Lisandro.
 - Russian translation: aerie.ru team.
 - German translation: Jarl.
