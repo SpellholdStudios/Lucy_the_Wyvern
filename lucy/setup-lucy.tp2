@@ -1,5 +1,6 @@
 BACKUP ~lucy/backup~
-AUTHOR ~berelinde - berelinde@gmail.com~
+//AUTHOR ~berelinde - berelinde@gmail.com~
+SUPPORT ~bereline and Spellhold Studios at http://www.shsforums.net/forum/234-miscellaneous-released-mods/~
 
 //MODDER
 
@@ -42,23 +43,28 @@ LANGUAGE ~Polski (translation by Cahir)~
  *  Lucy the Wyvern Mod for BG2  *
  * ============================= */
 BEGIN @0
+DESIGNATED 0 LABEL ~lucy_the_wyvern~
+REQUIRE_PREDICATE GAME_IS ~bg2 tob bgt bg2ee eet~ @1 /* You must have BG2, ToB, BGT, BG2:EE or EET installed to install Lucy the Wyvern Mod for BG2. */
 
 APPEND ~STATE.IDS~
   ~0x80101FEF CD_STATE_NOTVALID~
   UNLESS ~CD_STATE_NOTVALID~
 
-//Creature copying and naming
-
+// Creature copying and naming
+// ---------------------------
 COPY_EXISTING ~amwyvern.cre~ ~override~
-  WRITE_ASCII 0x280 ~lucy2~ #32 // assign DV
+	WRITE_ASCII 0x280 ~lucy2~ #32	// assign DV
+BUT_ONLY
 
 COPY_EXISTING ~dharlot2.cre~ ~override/b!lucy.cre~
-  SAY NAME1 @1
-  SAY NAME2 @1
-  WRITE_ASCII 0x248 ~b!lucy~ #8 // assign override script
-  WRITE_ASCII 0x2cc ~b!lucy~ #8 // assign pre-joining dialogue file
-  WRITE_ASCII 0x280 ~b!lucy2~ #32 // assign DV
-  
-//Compile dialogues and scripts
+	SAY NAME1 @11
+	SAY NAME2 @11
+	WRITE_ASCII 0x248 ~b!lucy~ #8	// assign override script
+	WRITE_ASCII 0x2cc ~b!lucy~ #8	// assign pre-joining dialogue file
+	WRITE_ASCII 0x280 ~b!lucy2~ #32	// assign DV
+BUT_ONLY
+
+// Compile dialogues and scripts
+// -----------------------------
 COMPILE ~lucy/files/b!lucy.d~
 COMPILE ~lucy/files/b!lucy1.baf~

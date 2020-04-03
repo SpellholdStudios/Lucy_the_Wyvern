@@ -46,7 +46,7 @@ To access this encounter, simply talk to Lucy with your Bhaalspawn PC.
 
 This mod is designed to work on the following Infinity Engine games: the original Baldur's Gate II (BG2 or just SoA) with or without the Throne of Bhaal (ToB) expansion, Baldur's Gate II: Enhanced Edition (BG2:EE), the conversion projects <a href="http://www.shsforums.net/forum/261-bgt-weidu/">Baldur's Gate Trilogy (BGT)</a> and <a href="https://github.com/K4thos/EET/releases">Enhanced Edition Trilogy (EET)</a>.
 
-This is a WeiDU mod, and therefore should be compatible with all WeiDU mods. However, because this mod reassigns Lucy's DV, it will not be compatible with other mods that use this DV. As far as I know, there are none. The new DV is "*lucy*". If you encounter any bugs, please <a href="www.shsforums.net/topic/33667-lucy-the-wyvern/">report them on the forum</a>!
+This is a WeiDU mod, and therefore should be compatible with all WeiDU mods. However, because this mod reassigns Lucy's DV, it will not be compatible with other mods that use this DV. As far as I know, there are none. The new DV is "*lucy2*". If you encounter any bugs, please <a href="www.shsforums.net/topic/33667-lucy-the-wyvern/">report them on the forum</a>!
 
 >Although it is not required for the Lucy the Wyvern mod to function properly, classical game players are strongly recommended to download and install the latest version of the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br>
 <div align="right"><a href="#top">Back to top</a></div>
@@ -129,10 +129,9 @@ Berelinde created this mod. She can be contacted at berelinde@gmail.com.
 - <a href="http://www.spellholdstudios.net/">Spellhold Studios</a> team for hosting the mod (<a href="http://www.shsforums.net">Forums</a>)
 - Scipio, for being Scipio.
 - Leomar, for being incredibly kind, traifying this, and updating the translations.
-
 - Polish translation: Cahir.
 - French translation: Le Marquis of the d'Ogmatiques.
-- Italian translation: Ilot.
+- Italian translation: Ilot. And Salk for providing Italian WeiDU prompts.
 - Spanish translation: Lisandro.
 - Russian translation: aerie.ru team.
 - German translation: Jarl.
@@ -179,24 +178,26 @@ Berelinde created this mod. She can be contacted at berelinde@gmail.com.
 
 - Added *lucy.ini* metadata file to support AL|EN's "Project Infinity".
 - Renamed *setup-lucy.tp2* -> *lucy.tp2* to support AL|EN's "Project Infinity".
-
 - Replaced `AUTHOR` keyword with `SUPPORT`.
+- Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
 - Added component `DESIGNATED` number and "*lucy_the_wyvern*" `LABEL`.
-- Replaced `GAME_IS` conditions with variables checks to speed up install time.
-- Added missing `HANDLE_CHARSETS` function to convert string entries for EE games (to prepare for possible translations).
 
+- Added missing `HANDLE_CHARSETS` function to convert string entries for EE games.
+
+- Fixed typos in .tra files.
+- Added Polish translation by Cahir (<a href="http://athkatla.cob-bg.pl/viewtopic.php?t=6046">BWP FixPack</a>).
+- Added German, Italian, Polish and Spanish WeiDU prompts.
 - Updated deprecated modding tools links.
 - Re-formated, updated and renamed readme file to *isra_bg2-readme-english.html* and moved it into new readme folder.
-- Removed useless files and folders (backup, batch...).
+- Removed useless "*backup*" folder.
 - Reorganized mod architecture tree: created "*lang*" and "*files*" folders to sort files according to their types.
+- Lower cased files.
 - Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
 - Updated WeiDU installer to v246.
 - Uploaded mod to official Spellhold Studios GitHub mirror account.
 
 ----------------------------------------------------------------------------------------
 :: lucy -  Lucy the Wyvern v4
-
-- Added Polish translation by Cahir (<a href="http://athkatla.cob-bg.pl/viewtopic.php?t=6046">BWP FixPack</a>).
 
 :: HANDLE_CHARSETS for EE compatibility
 :: - LINK NOT FOUND -
