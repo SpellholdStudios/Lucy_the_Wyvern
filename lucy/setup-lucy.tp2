@@ -8,6 +8,34 @@ VERSION ~v4~
 
 README ~lucy/readme-lucy.txt~
 
+ALWAYS
+
+	/* CamDawg's custom IsValidForPartyDialogue() state. Thanks Cam!
+	   covers STATE_CONFUSED, STATE_FEEBLEMINDED, STATE_SILENCED, STATE_DEAD, STATE_ACID_DEATH, STATE_FLAME_DEATH, STATE_EXPLODING_DEATH, STATE_STONE_DEATH, STATE_FROZEN_DEATH, STATE_HELPLESS, STATE_STUNNED, STATE_PANIC, STATE_BERSERK, STATE_SLEEPING */
+	APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+
+
+	/* --------------------------------------------------------------------------------------------- *
+	 *    Convert strings to UTF-8 for BGEE/BG2EE                                                    *
+	 *    No exception, everything needs to be converted                                             *
+	 *    setup.tra contains in game texts as well as installation texts and need to be converted    *
+	 * -----------------------------------------------------------------------*--------------------- */
+	ACTION_DEFINE_ARRAY b!noconvert BEGIN END
+	// any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
+	ACTION_DEFINE_ARRAY b!reload BEGIN setup END
+
+	LAF HANDLE_CHARSETS
+		INT_VAR
+			infer_charsets = 1
+		STR_VAR
+			tra_path = EVAL ~%MOD_FOLDER%/lang~
+			noconvert_array = b!noconvert
+			reload_array = b!reload
+	END
+
+END
+
+
 AUTO_TRA ~lucy/lang/%s~
 
 LANGUAGE ~English~
@@ -45,10 +73,6 @@ LANGUAGE ~Polski (translation by Cahir)~
 BEGIN @0
 DESIGNATED 0 LABEL ~lucy_the_wyvern~
 REQUIRE_PREDICATE GAME_IS ~bg2 tob bgt bg2ee eet~ @1 /* You must have BG2, ToB, BGT, BG2:EE or EET installed to install Lucy the Wyvern Mod for BG2. */
-
-APPEND ~STATE.IDS~
-  ~0x80101FEF CD_STATE_NOTVALID~
-  UNLESS ~CD_STATE_NOTVALID~
 
 // Creature copying and naming
 // ---------------------------
