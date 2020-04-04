@@ -23,7 +23,7 @@
 [R] ponowna instalacja, [N] pozostaw bez zmian, [U] odinstaluj, [Q] zakoncz
 ~
 @-1008 = ~]?
-[I] tak, [N] nie, [Q] zakoncz
+[Y] tak, [N] nie, [Q] zakoncz
 ~
 
 @-1009 = ~Wprowadz fragment nazwy modulu: ~
