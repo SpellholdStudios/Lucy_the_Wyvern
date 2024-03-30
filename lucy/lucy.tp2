@@ -67,6 +67,9 @@ LANGUAGE ~Polski (translation by Cahir)~
          ~lucy/lang/polish/setup.tra~
 
 
+LANGUAGE  ~Simplified Chinese (translation: Lewis Liu)~
+          ~schinese~
+         ~lucy/lang/schinese/setup.tra~
 /* ============================= *
  *  Lucy the Wyvern Mod for BG2  *
  * ============================= */
