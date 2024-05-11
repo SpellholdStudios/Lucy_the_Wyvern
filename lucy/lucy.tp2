@@ -20,7 +20,7 @@ ALWAYS
 	 *    No exception, everything needs to be converted                                             *
 	 *    setup.tra contains in game texts as well as installation texts and need to be converted    *
 	 * -----------------------------------------------------------------------*--------------------- */
-	ACTION_DEFINE_ARRAY b#noconvert BEGIN END
+	ACTION_DEFINE_ARRAY b#noconvert BEGIN setup-win32 setup-osx setup-unix END
 	// any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
 	ACTION_DEFINE_ARRAY b#reload BEGIN setup END
 
@@ -66,10 +66,10 @@ LANGUAGE ~Polski (translation by Cahir)~
          ~polish~
          ~lucy/lang/polish/setup.tra~
 
-
 LANGUAGE  ~Simplified Chinese (translation: Lewis Liu)~
           ~schinese~
-         ~lucy/lang/schinese/setup.tra~
+         ~lucy/lang/schinese/setup-%WEIDU_OS%.tra~
+
 /* ============================= *
  *  Lucy the Wyvern Mod for BG2  *
  * ============================= */
